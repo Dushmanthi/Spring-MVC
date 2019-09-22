@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h3>Record successfully stored!</h3>
 
 </body>
 </html>

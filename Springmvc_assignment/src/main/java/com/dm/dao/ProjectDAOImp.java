@@ -34,8 +34,9 @@ public class ProjectDAOImp  implements ProjectDAO {
 	}
 	
 	public List<Project> getAllProject() {
-		String query="from Project";
-		List<Project> classification = (List<Project>) hibernateTemplate.find(query);
-		return classification;
+		//String query="from project";
+		//List<Project> project = (List<Project>) hibernateTemplate.find(query);
+		List<Project> project = hibernateTemplate.loadAll(Project.class);
+		return project;
 	}
 }

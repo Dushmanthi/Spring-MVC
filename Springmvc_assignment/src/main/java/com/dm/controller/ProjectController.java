@@ -34,8 +34,8 @@ public class ProjectController {
 	}
 	
 	@RequestMapping(value ="/view", method =RequestMethod.GET)
-    public ModelAndView getClassififcation() {
-		ModelAndView mav = new ModelAndView("ViewProject");
+    public ModelAndView getAllProject() {
+		ModelAndView mav = new ModelAndView("view");
 		mav.addObject("projectList",projectService.getAllProject());
 		return mav;
 	}
